@@ -1,101 +1,382 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
     <!-- fontawesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <!-- custom css -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 
     <!-- google font -->
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
-        </style>
-</head>
-<body>
-    <header>
-        <i class="fa-solid fa-bars"></i>
-        <i class="fa-brands fa-youtube"></i>
-        <input type="text" placeholder="Search">
-        <button><i class="fa-solid fa-magnifying-glass"></i></button>
-        <i class="fa-solid fa-microphone"></i>
-        <i class="fa-regular fa-bell"></i>
-        <img src="photo/backiee-168056.jpg" alt="picture">
-    </header>
+      @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&family=Roboto:wght@300;400;500;700;900&display=swap");
+    </style>
+  </head>
+  <body>
+    <div id="header">
+      <i class="fa-solid fa-bars"></i>
+      <i class="fa-brands fa-youtube"></i>
+      <span>YouTube</span>
+      <input type="text" placeholder="Search" />
+      <button><i class="fa-solid fa-magnifying-glass"></i></button>
+      <i class="fa-solid fa-microphone"></i>
+      <i class="fa-regular fa-moon"></i>
+      <i class="fa-regular fa-bell"></i>
+      <img src="photo/backiee-168056.jpg" alt="picture" class="profile" />
+    </div>
 
+    <!-- navbar -->
     <nav id="navbar">
-        <div class="nav-box active">
-            <i class="fa-solid fa-house"></i>
-            <span>Home</span>
-        </div>
-        <div class="nav-box">
-            <i class="fa-solid fa-film"></i>
-            <span>Shorts</span>
-        </div>
-        <div class="nav-box">
-            <i class="fa-brands fa-square-youtube"></i>
-            <span>Subscriptions</span>
-        </div>
+      <div class="nav-box active">
+        <i class="fa-solid fa-house"></i>
+        <span>Home</span>
+      </div>
+      <div class="nav-box">
+        <i class="fa-solid fa-film"></i>
+        <span>Shorts</span>
+      </div>
+      <div class="nav-box">
+        <i class="fa-brands fa-square-youtube"></i>
+        <span>Subscriptions</span>
+      </div>
 
-        <div class="line"></div>
+      <div class="line"></div>
 
-        <div class="nav-box">
-            <i class="fa-solid fa-clock-rotate-left"></i>
-            <span>History</span>
-        </div>
-        <div class="nav-box">
-            <i class="fa-solid fa-clapperboard"></i>
-            <span>Your videos</span>
-        </div>
-        <div class="nav-box">
-            <i class="fa-regular fa-clock"></i>
-            <span>Watch later</span>
-        </div>
+      <div class="nav-box">
+        <i class="fa-solid fa-clock-rotate-left"></i>
+        <span>History</span>
+      </div>
+      <div class="nav-box">
+        <i class="fa-solid fa-clapperboard"></i>
+        <span>Your videos</span>
+      </div>
+      <div class="nav-box">
+        <i class="fa-regular fa-clock"></i>
+        <span>Watch later</span>
+      </div>
 
-        <div class="line"></div>
+      <div class="line"></div>
 
-        <h1>Explore</h1>
-        <div class="nav-box">
-           <i class="fa-solid fa-fire"></i>
-            <span>Trending</span>
-        </div>
-        <div class="nav-box">
-            <i class="fa-solid fa-music"></i>
-            <span>Music</span>
-        </div>
-        <div class="nav-box">
-            <i class="fa-solid fa-gamepad"></i>
-            <span>Gaming</span>
-        </div>
-        <div class="nav-box">
-            <i class="fa-solid fa-trophy"></i>
-            <span>Sports</span>
-        </div>
-        
-        <div class="line"></div>
-        
-        <div class="nav-box">
-            <i class="fa-solid fa-gear"></i>
-            <span>Setting</span>
-        </div>
-        <div class="nav-box">
-            <i class="fa-regular fa-font-awesome"></i>
-            <span>Report history</span>
-        </div>
-        <div class="nav-box">
-            <i class="fa-regular fa-circle-question"></i>
-            <span>Help</span>
-        </div>
-        <div class="nav-box">
-            <i class="fa-solid fa-circle-info"></i>
-            <span>Send feedback</span>
-        </div>
+      <h1>Explore</h1>
+      <div class="nav-box">
+        <i class="fa-solid fa-fire"></i>
+        <span>Trending</span>
+      </div>
+      <div class="nav-box">
+        <i class="fa-solid fa-music"></i>
+        <span>Music</span>
+      </div>
+      <div class="nav-box">
+        <i class="fa-solid fa-gamepad"></i>
+        <span>Gaming</span>
+      </div>
+      <div class="nav-box">
+        <i class="fa-solid fa-trophy"></i>
+        <span>Sports</span>
+      </div>
 
+      <div class="line"></div>
+
+      <div class="nav-box">
+        <i class="fa-solid fa-gear"></i>
+        <span>Setting</span>
+      </div>
+      <div class="nav-box">
+        <i class="fa-regular fa-font-awesome"></i>
+        <span>Report history</span>
+      </div>
+      <div class="nav-box">
+        <i class="fa-regular fa-circle-question"></i>
+        <span>Help</span>
+      </div>
+      <div class="nav-box">
+        <i class="fa-solid fa-circle-info"></i>
+        <span>Send feedback</span>
+      </div>
     </nav>
-</body>
+
+    <div class="container">
+      <!-- catagory -->
+      <div id="catagory">
+        <span>All</span>
+        <span>New to you</span>
+        <span>Mixes</span>
+        <span>Music</span>
+        <span>Lana Del Rey</span>
+        <span>Indie Music</span>
+        <span>The Weeknd</span>
+        <span>Rhythm & Blues</span>
+        <span>Live</span>
+        <span>4K resolution</span>
+        <span>Chill-out Music</span>
+        <span>Background Music</span>
+      </div>
+
+      <!-- video -->
+      <div id="video">
+        <div class="video-box">
+          <iframe
+            width="290"
+            height="160"
+            src="https://www.youtube-nocookie.com/embed/T9RRe4ZsSGw"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <div class="caption">
+            <img src="photo/friends.jpg" alt="picture" class="profile" />
+            <div class="caption-text">
+              <h2>Best of Chandler jokes | Friends</h2>
+              <p>Friends <i class="fa-solid fa-circle-check"></i></p>
+              <p>1.4M views ~ 4 months ago</p>
+            </div>
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+          </div>
+        </div>
+        <div class="video-box">
+          <iframe
+            width="290"
+            height="160"
+            src="https://www.youtube-nocookie.com/embed/o5F8MOz_IDw"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <div class="caption">
+            <img src="photo/R.png" alt="picture" class="profile" />
+            <div class="caption-text">
+              <h2>Avatar: The Way of Water | New Trailer</h2>
+              <p>Avatar <i class="fa-solid fa-circle-check"></i></p>
+              <p>373K views ~ 1 hour ago</p>
+            </div>
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+          </div>
+        </div>
+        <div class="video-box">
+          <iframe
+            width="290"
+            height="160"
+            src="https://www.youtube-nocookie.com/embed/l8ZH3nd6i8k"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <div class="caption">
+            <img src="photo/graham.jpg" alt="picture" class="profile" />
+            <div class="caption-text">
+              <h2>The Funniest Unexpected Moments On The Graham...</h2>
+              <p>
+                The Graham Norton Show <i class="fa-solid fa-circle-check"></i>
+              </p>
+              <p>2.5M views ~ 2 years ago</p>
+            </div>
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+          </div>
+        </div>
+        <div class="video-box">
+          <iframe
+            width="290"
+            height="160"
+            src="https://www.youtube-nocookie.com/embed/7HlSKPTYZhs"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <div class="caption">
+            <img src="photo/movie.jpg" alt="picture" class="profile" />
+            <div class="caption-text">
+              <h2>
+                Batman v Superman: Dawn of Justice (2016) - Superman on...
+              </h2>
+              <p>Movieclips <i class="fa-solid fa-circle-check"></i></p>
+              <p>14M views ~ 5 years ago</p>
+            </div>
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+          </div>
+        </div>
+        <div class="video-box">
+          <iframe
+            width="290"
+            height="160"
+            src="https://www.youtube-nocookie.com/embed/PEr8t216DTM"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <div class="caption">
+            <img src="photo/moe htet.jpg" alt="picture" class="profile" />
+            <div class="caption-text">
+              <h2>
+                Moe Htet(B+) - Sunflower ( Ft. Maybel ) ( Official Lyric Video )
+              </h2>
+              <p>Moe Htet Bone Plus</p>
+              <p>558K views ~ 1 year ago</p>
+            </div>
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+          </div>
+        </div>
+        <div class="video-box">
+          <iframe
+            width="290"
+            height="160"
+            src="https://www.youtube-nocookie.com/embed/qTqfi0fTcz8"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <div class="caption">
+            <img src="photo/litt ent.jpg" alt="picture" class="profile" />
+            <div class="caption-text">
+              <h2>Htet Thiri - A Tate (Official Visualizer)</h2>
+              <p>LITT ENT.</p>
+              <p>991K views ~ 1 year ago</p>
+            </div>
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+          </div>
+        </div>
+        <div class="video-box">
+          <iframe
+            width="290"
+            height="160"
+            src="https://www.youtube-nocookie.com/embed/xylh06bx1_4"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <div class="caption">
+            <img src="photo/may.jpg" alt="picture" class="profile" />
+            <div class="caption-text">
+              <h2>May & PAST12 - Kyal (Acoustic)</h2>
+              <p>MAY <i class="fa-solid fa-music"></i></p>
+              <p>1.5M views ~ 3 years ago</p>
+            </div>
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+          </div>
+        </div>
+        <div class="video-box">
+          <iframe
+            width="290"
+            height="160"
+            src="https://www.youtube-nocookie.com/embed/8r4h3KMufL4"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <div class="caption">
+            <img src="photo/bg 18.jpg" alt="picture" class="profile" />
+            <div class="caption-text">
+              <h2>BG18 - အချစ် [OFFICIAL LYRIC VIDEO]</h2>
+              <p>BG 18 Record Label</p>
+              <p>2M views ~ 9 months ago</p>
+            </div>
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+          </div>
+        </div>
+        <div class="video-box">
+          <iframe
+            width="290"
+            height="160"
+            src="https://www.youtube-nocookie.com/embed/eFnUUZEtTCU"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <div class="caption">
+            <img src="photo/shine.jpg" alt="picture" class="profile" />
+            <div class="caption-text">
+              <h2>SHINE - Min Atwat Ngar [ Official Lyric Video ]</h2>
+              <p>SHINE Official</p>
+              <p>392K views ~ 10 months ago</p>
+            </div>
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+          </div>
+        </div>
+        <div class="video-box">
+          <iframe
+            width="290"
+            height="160"
+            src="https://www.youtube-nocookie.com/embed/fYQzWi1YAgc"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <div class="caption">
+            <img src="photo/john derek.jpg" alt="picture" class="profile" />
+            <div class="caption-text">
+              <h2>JohnDerek OCEAN Official Music Video</h2>
+              <p>JohnDerek <i class="fa-solid fa-music"></i></p>
+              <p>87K views ~ 7 months ago</p>
+            </div>
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+          </div>
+        </div>
+        <div class="video-box">
+          <iframe
+            width="290"
+            height="160"
+            src="https://www.youtube-nocookie.com/embed/0VoVijmjHC4"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <div class="caption">
+            <img src="photo/yoyo.jpg" alt="picture" class="profile" />
+            <div class="caption-text">
+              <h2>薩頂頂 SaDingding《如若歸來 If You Come Back》</h2>
+              <p>YOYOROCK <i class="fa-solid fa-circle-check"></i></p>
+              <p>1M views ~ 1 year ago</p>
+            </div>
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+          </div>
+        </div>
+        <div class="video-box">
+          <iframe
+            width="290"
+            height="160"
+            src="https://www.youtube-nocookie.com/embed/FRDR1Y5ZOao"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <div class="caption">
+            <img src="photo/modern family.jpg" alt="picture" class="profile" />
+            <div class="caption-text">
+              <h2>Modern Family - Best Phil Dunphy Moments + Bloopers</h2>
+              <p>
+                The SITuation COMpilation
+                <i class="fa-solid fa-circle-check"></i>
+              </p>
+              <p>1M views ~ 3 years ago</p>
+            </div>
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>
