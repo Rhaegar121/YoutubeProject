@@ -9,8 +9,8 @@
 :root {
     --primary-color: #fff;
     --secondary-color: #111;
-    --third-color: #ededed;
-    --fourth-color: #dddddd;
+    --third-color: #e5e5e5;
+    --fourth-color: #c9c9c9;
 }
 
 .dark-theme {
@@ -31,6 +31,9 @@ body {
     padding-top: 10px;
     background-color: var(--primary-color);
     position: fixed;
+}
+#header a {
+    color: var(--secondary-color);
 }
 #header i {
     font-size: 22px;
@@ -57,7 +60,7 @@ body {
     left: 6%;
     margin-top: 7px;
 }
-#header span {
+#header a span {
     left: 8.3%;
     margin-top: 5px;
     font-size: 21px;
@@ -77,8 +80,9 @@ body {
     left: 50%;
     transform: translateX(-50%);
     padding-left: 17px;
-    border: 0.3px solid var(--fourth-color);
+    border: 0.1px solid var(--fourth-color);
     background-color: var(--primary-color);
+    outline-color: #2323c2;
 }
 #header input::placeholder {
     font-size: 17px;
@@ -101,13 +105,14 @@ body {
 }
 #header .fa-microphone {
     position: fixed;
-    left: 71%;
+    left: 70%;
     background-color: var(--primary-color);
     width: 43px;
     height: 43px;
     border-radius: 50%;
     text-align: center;
     line-height: 43.5px;
+    font-size: 18px;
 }
 #header .fa-microphone:hover {
     background-color: var(--third-color);
@@ -167,7 +172,7 @@ body {
 #navbar {
     display: flex;
     flex-direction: column;
-    top: 60px;
+    top: 75px;
     left: 10px;
     position: fixed;
 }
@@ -255,6 +260,10 @@ body {
 }
 #video .video-box iframe {
     border-radius: 10px;
+}
+#video .video-box a {
+    text-decoration: none;
+    color: var(--secondary-color);
 }
 #video .video-box .caption {
     display: flex;
