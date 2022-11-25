@@ -9,8 +9,9 @@
 :root {
     --primary-color: #fff;
     --secondary-color: #111;
-    --third-color: #e5e5e5;
+    --third-color: #ececec;
     --fourth-color: #c9c9c9;
+    --scroll-color: #7f7f7f;
 }
 
 .dark-theme {
@@ -18,7 +19,26 @@
     --secondary-color: #ededed;
     --third-color: #2e2e2e;
     --fourth-color: #5e5e5e;
+    --scroll-color: #b4b4b4;
 }
+
+/* width */
+::-webkit-scrollbar {
+    width: 8.5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: var(--primary-color);
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--scroll-color);
+    border-radius: 10px;
+}
+
 
 body {
     color: var(--secondary-color);
@@ -27,20 +47,24 @@ body {
 
 #header {
     width: 100%;
-    height: 115px;
+    height: 60px;
     padding-top: 10px;
     background-color: var(--primary-color);
     position: fixed;
+    z-index: 999;
 }
+
 #header a {
     color: var(--secondary-color);
 }
+
 #header i {
     font-size: 22px;
 }
+
 #header .fa-bars {
     position: fixed;
-    left: 1.3%;
+    left: 1%;
     font-size: 23px;
     background-color: var(--primary-color);
     width: 43px;
@@ -49,19 +73,22 @@ body {
     text-align: center;
     line-height: 43.5px;
 }
+
 #header .fa-bars:hover {
     background-color: var(--third-color);
     cursor: pointer;
 }
+
 #header .fa-youtube {
     color: red;
     font-size: 30px;
     position: fixed;
-    left: 6%;
+    left: 5%;
     margin-top: 7px;
 }
+
 #header a span {
-    left: 8.3%;
+    left: 7.3%;
     margin-top: 5px;
     font-size: 21px;
     font-weight: 500;
@@ -69,9 +96,11 @@ body {
     font-family: 'Oswald', sans-serif;
     letter-spacing: -0.3mm;
 }
+
 #header span:hover {
     cursor: pointer;
 }
+
 #header input {
     width: 600px;
     height: 40px;
@@ -84,9 +113,11 @@ body {
     background-color: var(--primary-color);
     outline-color: #2323c2;
 }
+
 #header input::placeholder {
     font-size: 17px;
 }
+
 #header button {
     border: none;
     background: none;
@@ -95,14 +126,17 @@ body {
     border-left: 0.3px solid var(--fourth-color);
     padding: 5px 0px 5px 15px;
 }
+
 #header button .fa-magnifying-glass {
     font-size: 20px;
     margin-top: 6px;
     color: var(--secondary-color);
 }
+
 #header button .fa-magnifying-glass:hover {
     cursor: pointer;
 }
+
 #header .fa-microphone {
     position: fixed;
     left: 70%;
@@ -114,10 +148,12 @@ body {
     line-height: 43.5px;
     font-size: 18px;
 }
+
 #header .fa-microphone:hover {
     background-color: var(--third-color);
     cursor: pointer;
 }
+
 #header .fa-moon {
     position: fixed;
     right: 9%;
@@ -128,10 +164,12 @@ body {
     text-align: center;
     line-height: 43.5px;
 }
+
 #header .fa-moon:hover {
     background-color: var(--third-color);
     cursor: pointer;
 }
+
 #header .fa-bell {
     position: fixed;
     right: 5%;
@@ -142,6 +180,7 @@ body {
     text-align: center;
     line-height: 43.5px;
 }
+
 #header .fa-bell::after {
     content: "2";
     top: 6px;
@@ -155,10 +194,12 @@ body {
     color: #fff;
     background-color: #cb0000;
 }
+
 #header .fa-bell:hover {
     background-color: var(--third-color);
     cursor: pointer;
 }
+
 #header img {
     width: 35px;
     height: 35px;
@@ -168,68 +209,103 @@ body {
     margin-top: 4px;
 }
 
+#container {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
 /* navbar */
 #navbar {
     display: flex;
     flex-direction: column;
-    top: 75px;
-    left: 10px;
+    top: 60px;
     position: fixed;
+    width: 16%;
+    height: 100vh;
+    padding: 0px 10px;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
+
 #navbar h1 {
     font-size: 17.5px;
     font-weight: 400;
     margin: 7px 17px;
 }
-.line {
+
+#navbar .line {
     content: "";
-    width: 210px;
-    height: 1px;
+    width: 205px;
     background-color: var(--third-color);
-    display: inline-block;
-    padding: 0;
+    padding: 0.7px;
     margin: 10px 0;
 }
+
 .nav-box {
-    width: 220px;
-    height: 38px;
+    width: 200px;
+    height: 41px;
     border-radius: 10px;
     line-height: 9px;
-    padding: 16px 22px;
-    margin: 1.5px 0px;
-    position: relative;
+    padding: 16px;
 }
+
 .nav-box:hover {
     background-color: var(--third-color);
     cursor: pointer;
 }
+
 .active {
     background-color: var(--third-color);
+    margin-top: 10px;
 }
+
 .active span {
     font-weight: 500;
 }
+
 .nav-box i {
     font-size: 19px;
     transform: translateY(-13%);
 }
+
 .nav-box span {
     font-size: 14.5px;
     position: absolute;
     left: 33%;
 }
 
+#navbar p {
+    font-size: 13px;
+    font-weight: 500;
+    padding: 8px 15px;
+    word-spacing: 4px;
+    line-height: 17px;
+}
+
+#navbar p:last-child {
+    margin-bottom: 65px;
+    word-spacing: normal;
+    font-size: 12px;
+    font-weight: 400;
+}
+
 .container {
+    width: 83%;
     padding-top: 60px;
-    padding-left: 280px;
+    padding-left: 25px;
+    position: absolute;
+    left: 240px;
 }
 
 /* catagory */
 #catagory {
     position: fixed;
-    z-index: 999;
     padding-top: 15px;
+    width: 100%;
+    height: 50px;
+    background-color: var(--primary-color);
 }
+
 #catagory span {
     background-color: var(--third-color);
     padding: 7px 10px;
@@ -238,10 +314,12 @@ body {
     font-size: 15px;
     color: var(--secondary-color);
 }
+
 #catagory span:first-child {
     background-color: var(--secondary-color);
     color: var(--primary-color);
 }
+
 #catagory span:hover {
     background-color: var(--fourth-color);
     cursor: pointer;
@@ -252,45 +330,55 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-top: 40px;
+    margin: 40px 0;
 }
+
 #video .video-box {
     width: 25%;
     margin-top: 30px;
 }
+
 #video .video-box iframe {
     border-radius: 10px;
 }
+
 #video .video-box a {
     text-decoration: none;
     color: var(--secondary-color);
 }
+
 #video .video-box .caption {
     display: flex;
     margin-top: 10px;
 }
+
 .caption .fa-ellipsis-vertical {
     margin-left: 17px;
     display: none;
 }
+
 #video .video-box .caption:hover {
     cursor: pointer;
 }
+
 #video .video-box .caption:hover .fa-ellipsis-vertical {
     display: block;
 }
+
 #video .video-box .profile {
     width: 35px;
     height: 35px;
     border-radius: 35px;
     margin-right: 10px;
 }
+
 .caption-text h2 {
     font-size: 15.5px;
     font-weight: 500;
     max-width: 220px;
     margin-bottom: 9px;
 }
+
 .caption-text p {
     font-size: 12.3px;
     font-weight: 400;
